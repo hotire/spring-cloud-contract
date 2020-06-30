@@ -11,5 +11,35 @@
 
     <artifactId>server</artifactId>
 
+    <properties>
+        <spring-cloud-contract.version>2.0.2.RELEASE</spring-cloud-contract.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-contract-verifier</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-contract-wiremock</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <version>${spring-cloud-contract.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <baseClassForTests>com.github.hotire.server.ApplicationTest</baseClassForTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
