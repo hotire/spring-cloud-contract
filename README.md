@@ -31,7 +31,16 @@ E2E(End to End)은 확실한 전략이지만, 많은 시간과 테스트 자원�
 
 : 결국 CDC를 성공시키기 위해선 정합성 유지와 테스트 코드가 필요하다. 이를 해결해주는 것이 Spring Cloud Contract이다. 
 
-### 
+
+### Spring Cloud Contract Workflow
+
+1. 소비자(Consumer)는 Contract를 정의하여 제공자(Producer) 에게 요청 (Pull Request)
+
+2. 제공자(Producer)는 Contract를 구현
+
+3. 제공자(Producer)의 Contract 구현으로 생성된 stub.jar 를 업로드한다. (Nexus or Spring Cloud Eureka 등)
+
+4. 소비자(Consumer)는 자신이 요청한 Contract 기반으로 구현된 stub.jar 를 다운로드 받아 테스트한다.
 
 
 **reference** 
