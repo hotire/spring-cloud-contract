@@ -47,6 +47,21 @@ E2E(End to End)은 확실한 전략이지만, 많은 시간과 테스트 자원�
 
 1. Contract 작성 DSL 제공
 
+2. Plugin
+
+Maven, Gradle Plugin 제공 
+
+3. Mock 환경 
+
+자동으로 Mock 테스트를 수행할 수 있다. 
+
+4. Stub 생성
+
+제공자가 Contract 기반으로 정의한 테스트 Mock을 제공하고 소비자는 테스트에서 사용이 가능하다. 
+
+application jar 도 제공하기 때문에 쉽게 Mock 기반의 서버를 띄울 수도 있다. 
+
+
 **reference** 
 
 - https://spring.io/projects/spring-cloud-contract
