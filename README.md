@@ -43,6 +43,10 @@ E2E(End to End)은 확실한 전략이지만, 많은 시간과 테스트 자원�
 4. 소비자(Consumer)는 자신이 요청한 Contract 기반으로 구현된 stub.jar 를 다운로드 받아 테스트한다.
 
 
+### Spring Cloud Contract Function 
+
+1. Contract 작성 DSL 제공
+
 **reference** 
 
 - https://spring.io/projects/spring-cloud-contract
